@@ -1,3 +1,21 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals",
+    "plugin:@tailwindcss/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "dist",
+    ".eslintrc",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "next.config.js"
+  ],
+  "plugins": ["@tailwindcss"],
+  "rules": {
+    "react/no-unescaped-entities": 0
+  }
 }
